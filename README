@@ -1,0 +1,23 @@
+Portions Copyright (c) 2011-2012 by Scott Sanbar.  See COPYRIGHT file for details.
+
+Original Author:  Mozilla Developer Network (MDN) and other resources
+                  Scott Sanbar - scott.sanbar@gmail.com
+
+Online Code Repository: https://github.com/JSLearning
+
+JSLearning - JavaScript Learning Exercises
+
+* This project is not affiliated with Mozilla Developer Network
+* Exercises from both the MDN Guide and other resources
+* Many exercises authored by Scott Sanbar as I use various learning resources
+* Practical exercises used to learn and explore JavaScript and the DOM
+
+JavaScript is a very important front line vehicle for accessing APIs exposed by
+the Domain Object Model (DOM) in such environments as Web Browsers and Servers.
+
+JavaScript is a scripting language that includes reflection and very loose typing
+to facilitate ease of use for a wide audience of script writers.
+
+JavaScript is not Java or an offshoot of Java, but has syntax elements similar to
+Java and C/C++ to facilitate an easier learning curve for those already familiar
+with those computer languages.
