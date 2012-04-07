@@ -3,11 +3,11 @@ Portions Copyright (c) 2011-2012 by Scott Sanbar.  See COPYRIGHT file for detail
 Original Author:  Mozilla Developer Network (MDN) and other resources
                   Scott Sanbar - scott.sanbar@gmail.com
 
-Online Code Repository: https://github.com/JSLearning
+Online Code Repository: https://github.com/sanbar/JSLearning
 
 JSLearning - JavaScript Learning Exercises
 
-* This project is not affiliated with Mozilla Developer Network
+* This project is not affiliated with Mozilla Developer Network (MDN)
 * Exercises from both the MDN Guide and other resources
 * Many exercises authored by Scott Sanbar as I use various learning resources
 * Practical exercises used to learn and explore JavaScript and the DOM
