@@ -4,14 +4,67 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>JavaScript Learning Exercises</title>
+        <style type="text/css">
+            a:link {color:#FFFFFF;}    /* unvisited link */
+            a:visited {color:#DCC0FA;} /* visited link */
+            a:hover {color:#C0FAE6;}   /* mouse over link */
+            a:active {color:#65307A;}  /* selected link */
+        </style>
         <script type="text/javascript" src="MDNGuideExercises001.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <input style="width: 120px;" type="button" name="Run_Exercises"
-               onclick="runExercises('idDivToWrite')" value="Run Exercises"/>
-        <div><br /></div>
-        <div id="idDivToWrite"></div>
+        <table width="100%" border="0" cellpadding="2" cellspacing="2" bgcolor="#7295B8">
+            <tr>
+                <td>
+                    <input type="button" name="Display"
+                        onclick="gJSL_displayInput('gJSL_idInput', 'gJSL_idOutput')"
+                        value="Edit HTML Below then Click to Display"/>
+                </td>
+                <td>
+                    <div style="color: White;">Results</div>
+                </td>
+            <tr>
+                <td width="50%" valign="top">
+                    <textarea id="gJSL_idInput" 
+                                    style="height:520px; width:100%; border:0;">
+<html>
+    <head>
+        <script type="text/javascript">
+            function doScripts()
+            {
+                var outElem = document.getElementById("idScriptOutput");
+
+                outElem.innerHTML =  "The current date and time are:<br /><br />";
+                outElem.innerHTML += Date() + "<br />";
+                outElem.innerHTML += eval("var x = 42; var y = 69; x + y;");
+            }
+        </script>
+    </head>
+    <body>
+        <button type="button" onclick="doScripts()">Run Scripts</button><br />
+        <br />
+        <div id="idScriptOutput"">Click the 'Run Scripts' button to replace this text dynamically.</div>
+    </body>
+</html>
+                    </textarea>
+                </td>
+                <td width="50% valign=top">
+                    <iframe id="gJSL_idOutput" src="" style="background: White;"
+                            height="520" width="100%" frameborder="0"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://www.sanbarcomputing.com">
+                        <img src="../res/sanbar_computing_logo.png"></img>
+                    </a>
+                </td>
+                <td>
+                    <h3><a href="http://www.sanbarcomputing.com">http://www.sanbarcomputing.com</a>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
