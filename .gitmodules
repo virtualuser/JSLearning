@@ -1,0 +1,3 @@
+[submodule "Libraries/CoreLibrary"]
+	path = Libraries/CoreLibrary
+	url = git://github.com/sanbar/CoreLibrary.git
