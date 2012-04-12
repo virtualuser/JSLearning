@@ -6,10 +6,16 @@
 
 function gJSL_displayInput(idInput, idOutput) {
 
-    var ifrm = document.getElementById(idOutput);
-    var cnt = (ifrm.contentWindow || ifrm.contentDocument);
-    var doc = cnt.document;
-    doc.open();
-    doc.write(document.getElementById(idInput).value);
-    doc.close();
+    var loc = "::JSLearning::gJSL_displayInput()";
+    try {
+        var ifrm = document.getElementById(idOutput);
+        var cnt = (ifrm.contentWindow || ifrm.contentDocument);
+        var doc;
+        doc = cnt.document;
+        doc.open();
+        doc.write(document.getElementById(idInput).value);
+        doc.close();
+    } catch (e) {
+        exceptionAlert(loc, e);
+    }
 }

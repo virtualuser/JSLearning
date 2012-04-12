@@ -11,6 +11,7 @@
             a:hover {color:#C0FAE6;}   /* mouse over link */
             a:active {color:#65307A;}  /* selected link */
         </style>
+        <script type="text/javascript" src="../Libraries/CoreLibrary/src/ExceptionHandlingUtilities.js"></script>
         <script type="text/javascript" src="MDNGuideExercises001.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
@@ -31,21 +32,16 @@
                                     style="height:520px; width:100%; border:0;">
 <html>
     <head>
-        <script type="text/javascript">
-            function doScripts()
-            {
-                var outElem = document.getElementById("idScriptOutput");
-
-                outElem.innerHTML =  "The current date and time are:<br /><br />";
-                outElem.innerHTML += Date() + "<br />";
-                outElem.innerHTML += eval("var x = 42; var y = 69; x + y;");
-            }
-        </script>
     </head>
     <body>
-        <button type="button" onclick="doScripts()">Run Scripts</button><br />
-        <br />
-        <div id="idScriptOutput"">Click the 'Run Scripts' button to replace this text dynamically.</div>
+        <div id="idScriptOutput""></div>
+        <script type="text/javascript">
+            var outElem = document.getElementById("idScriptOutput");
+            outElem.innerHTML =  "The current date and time are:<br /><br />";
+            outElem.innerHTML += Date() + "<br /><br />";
+            var x = 42; var y = 69;
+            outElem.innerHTML += x + y;
+        </script>
     </body>
 </html>
                     </textarea>
