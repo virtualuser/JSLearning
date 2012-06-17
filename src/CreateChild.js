@@ -19,7 +19,7 @@ var Foo = {
 
 var Bat = {
     count: 25,
-    batVar: 'barVar',
+    batVar: 'batVar',
     batFunc: function(x) {
         return this.count + x;
     }
