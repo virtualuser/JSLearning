@@ -1,3 +1,9 @@
+// No known Copyright
+// Original Author:  ImBcmDth - irc.freenode.net - Jon-Carlos Rivera
+// see THANKS File
+
+
+
 (function(global) { // global is == to window
   "use strict"; // Tells JS engine to warn you about silly things you've done
 
