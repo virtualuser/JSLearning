@@ -1,6 +1,6 @@
-// Copyright 2011-2012 Scott Sanbar.  See COPYRIGHT file for details
+// Copyright 2012 Scott Sanbar.  See COPYRIGHT file for details
 // Original Author:  Scott Sanbar - scott.sanbar@gmail.com
-// Improved by Jon-Carlos Rivera
+// Improved by Jon-Carlos Rivera - see THANKS file
 
 var appSpace = (function () {
   

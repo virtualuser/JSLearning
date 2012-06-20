@@ -1,3 +1,6 @@
+// No known copyright
+// Given me by unknown on the irc.freenode.net ##javascript channel
+
 var base = {
     a: 0,
    
