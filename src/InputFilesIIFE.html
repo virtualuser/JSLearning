@@ -1,0 +1,20 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>InputFiles</title>
+        <script type="text/javascript" src="InputFiles.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body onLoad="load()">
+        <form>
+            <label>Photo</label>
+            <input type="file" id="fileElem" multiple accept="image/*" style="display:none" onchange="mySpace.handleFiles(this.files)">
+            <a href="#" id="fileSelect">Photo ?</a>
+            <div id="fileNames">(No Files Selected)</div>
+        </form>
+    </body>
+</html>

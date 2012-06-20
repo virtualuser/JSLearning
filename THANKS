@@ -1,8 +1,23 @@
 Thanks to the following people for their help on this project:
 
+Date...: June-2012 and on
+Nick...: ImBcmDth (on the irc.freenode.net ##javascript channel)
+Name...: Jon-Carlos Rivera
+Country: USA
+email..: jon.carlos.rivera@gmail.com
+website: http://jon-carlos.com
+
+He and sacho (nick) on ##freenode helped complete some tutoring started by
+Sorella and inimino on a good way to use Immediately Invoked Function Expression
+(IIFE) on a page's onLoad and passing in a global (either window or a module if
+you are using a library) to add externally accessible objects you define in the
+IIFE and define all the objects and callbacks you need for your functionality
+on that page.
+
 Date...: May-2012 and on
 Nick...: FireFly (on the irc.freenode.net ##javascript channel)
 Name...: Jonas Höglund
+Country: Unknown
 email..: unknown
 website: http://firefly.nu
 
@@ -24,6 +39,7 @@ actually be using.  It depends on performance of the two methods.
 Date...: Late December of 2011
 Nick...: ApOgEE (on irc.freenode.net)
 Name...: M. Fauzilkamil Zainuddin
+Country: Unknown
 email..: apogee@ubuntu.com
 website: http://coderstalk.blogspot.com
 
