@@ -1,16 +1,15 @@
 Portions Copyright (c) 2012 by Scott Sanbar.  See COPYRIGHT file for details.
 
-Original Author:  Mozilla Developer Network (MDN) and other resources
-                  Scott Sanbar - scott.sanbar@gmail.com
+Original Author:  Scott Sanbar and a host of others, including many from
+                  irc.freenode.net ##javascript channel
 
 Online Code Repository: https://github.com/sanbar/JSLearning
 
 JSLearning - JavaScript Learning Exercises
 
-* This project is not affiliated with Mozilla Developer Network (MDN)
-* Exercises from both the MDN Guide and other resources
-* Many exercises authored by Scott Sanbar as I use various learning resources
-* Practical exercises used to learn and explore JavaScript and the DOM
+* Many snippets authored by Scott Sanbar as I use various learning resources
+* Many more authored by various people in the community
+* Intended to capture many good coding practices and key concepts in JavaScript
 
 JavaScript is a very important front line vehicle for accessing APIs exposed by
 the Domain Object Model (DOM) in such environments as Web Browsers and Servers.
