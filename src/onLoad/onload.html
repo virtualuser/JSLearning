@@ -1,0 +1,25 @@
+<!-- Copyright © 2012 Scott Sanbar.  See COPYRIGHT file for details
+     Original Author:  Scott Sanbar - scott.sanbar@gmail.com -->
+
+<html>
+    <head>
+        <script type="text/javascript">
+            console.log("Logged: Just after <head>")
+        </script>
+        <title></title>
+        <script type="text/javascript" src="OnLoad.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            console.log("Logged: Just before </head>");
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            console.log("Logged: Just after <body>")
+        </script>
+        <div>Howdy, Pardner!</div>
+        <script type="text/javascript">
+            console.log("Logged: Just before </body>");
+        </script>
+    </body>
+</html>

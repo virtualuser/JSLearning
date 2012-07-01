@@ -1,4 +1,4 @@
-// Portions copyright 2012 Scott Sanbar.  See COPYRIGHT file for details
+// Portions copyright © 2012 Scott Sanbar.  See COPYRIGHT file for details
 // Original Author (portions):  Scott Sanbar - scott.sanbar@gmail.com
 
 function gJSL_displayInput(idInput, idOutput) {

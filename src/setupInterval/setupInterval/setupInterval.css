@@ -1,0 +1,20 @@
+/* Original Author:  ljharb - irc.freenode.net - ##javascript
+   see THANKS File */
+
+root { 
+    display: block;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+}
+#one {
+    background-color: #F00;
+}
+#two {
+    background-color: #0F0;
+}
+#three {
+    background-color: #00F;
+}

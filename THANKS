@@ -1,5 +1,33 @@
 Thanks to the following people for their help on this project:
 
+Date...: June-2012
+Nick...: ljharb in ##javascript on irc.freenode.net
+Name...: unknown
+Country: unknown
+email..: unknown
+website: unknown
+
+Date...: July-2012
+Nick...: laszlof in ##javascript on irc.freenode.net
+Name...: unknown
+Country: unknown
+email..: unknown
+website: unknown
+
+Made a nice namespace snippet for organizing your code into neat heirarchical
+namespaces and scopes.
+
+Date...: June-2012
+Nick...: unknown
+Name...: guipn (Guilharme P.N.)
+Country: unknown
+email..: unknown
+website: http://guipn.com/blog/ https://github.com/guipn
+
+Author of sinful.js and other stuff, more specifically deepCopy() extension to
+Object.  ImBcmDth (below) updated deepCopy() to be able to handle cyclical
+references.
+
 Date...: June-2012 and on
 Nick...: ImBcmDth (on the irc.freenode.net ##javascript channel)
 Name...: Jon-Carlos Rivera

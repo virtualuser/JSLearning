@@ -1,4 +1,4 @@
-// Copyright 2012 Scott Sanbar.  See COPYRIGHT file for details
+// Copyright © 2012 Scott Sanbar.  See COPYRIGHT file for details
 // Original Author:  Scott Sanbar - scott.sanbar@gmail.com
 
 var appSpace = (function (global) {

@@ -1,0 +1,35 @@
+/* Original Author:  ljharb - irc.freenode.net - ##javascript channel
+   Turned into neato Joe's sign by ImBcmDth - irc.freenode.net - ##javascript
+   Jon-Carlos Rivera also on ##javascript - see THANKS File
+   Updated by Scott Sanbar */
+
+div {
+    height: 100px;
+    width: 140px;
+    font-size:48px;
+    text-align:center;
+    padding-top:40px;
+    color:#fff;
+    text-shadow: 0px 0px 12px #fff;
+}
+#zero {
+    height: 130px;
+    padding-top: 10px;
+    font-size: 50px;
+    background-color: #00F;
+}
+#one {
+    background-color: #B00;
+}
+#two {
+    background-color: #0A0;
+}
+#three {
+    background-color: #00A;
+}
+#four {
+    background-color: #A00;
+}
+#five {
+    background-color: #0A0;
+}
