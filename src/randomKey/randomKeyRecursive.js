@@ -21,7 +21,7 @@ function getRandomInt(min, max, prevRandomKey) {
     var resultAry = []
     , random;
 
-    random = Math.floor(Math.random() * (max - min + 1) + min);
+    random = Math.floor(Math.random() * (max - min + 1)) + min;
     
     if (random === prevRandomKey) {
         resultAry = getRandomInt(min, max, prevRandomKey);

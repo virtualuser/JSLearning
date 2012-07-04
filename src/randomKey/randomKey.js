@@ -26,7 +26,7 @@ function getRandomInt(min, max, prevRandomKey) {
         if (typeof random !== "undefined") {
             resultAry.push(random);
         }
-        random = Math.floor(Math.random() * (max - min + 1) + min);
+        random = Math.floor(Math.random() * (max - min + 1)) + min;
     } while (random === prevRandomKey);
 
     resultAry.push(random);
