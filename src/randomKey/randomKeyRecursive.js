@@ -2,13 +2,13 @@ function setup() {
     'use strict';
 
     var msgAry = ['a', 'b', 'c']
-    , randomAry = getRandomInt(0, msgAry.length - 1)
+    , randomAry = [-1]
     , i;
 
     return function () {
         randomAry = getRandomInt(0, msgAry.length - 1, randomAry[randomAry.length - 1]);
         for (i = 0; i < randomAry.length - 1; i++) {
-        $('#output').html($('#output').html() + "Collision!<br />");
+            $('#output').html($('#output').html() + "Collision!<br />");
         };
         $('#output').html($('#output').html() + "Key: "
             + randomAry[i] + " Value: " + msgAry[randomAry[i]] + "<br />");
