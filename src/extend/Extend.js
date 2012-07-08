@@ -1,26 +1,29 @@
-// No known Copyright
-// Original Author:  FireFly - irc.freenode.net - Jonas Höglund see THANKS File
+// Original Author:  FireFly - Jonas Höglund - ##javascript channel
+// on irc.freenode.net - see THANKS File
 
 ///////////////
 // Library code
 ///////////////
 
-var Base = {}
-// Base#extend
-Object.defineProperty(Base, 'extend', {
-  enumerable: false,
-  value: function(obj) {
-    var descs = {}
+var ExtendBase = {};
 
-    ++objectInheritCounter
+Object.defineProperty(ExtendBase, 'extend', {
+    enumerable: false
+    , value: function(obj) {
+        'use strict';
+        
+        var descs = {}
+        , objectInheritCounter = 0;
+        
+        objectInheritCounter += 1;
 
-    Object.getOwnPropertyNames(obj).forEach(function(key) {
-      descs[key] = Object.getOwnPropertyDescriptor(obj, key)
-    })
+        Object.getOwnPropertyNames(obj).forEach(function(key) {
+        descs[key] = Object.getOwnPropertyDescriptor(obj, key)
+        });
 
-    return Object.create(this, descs)
-  }
-})
+        return Object.create(this, descs);
+    }
+});
 
 ///////////////
 // Sample Usage
