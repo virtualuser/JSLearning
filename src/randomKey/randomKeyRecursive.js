@@ -18,7 +18,6 @@ function setup(msgAry) {
             currentRandomKey = randomKey;
             collisionCount = 0;
         }
-        
         if ((randomKey = Math.floor(Math.random() * aryLen))
                 === currentRandomKey) {
                 collisionCount += 1;
@@ -31,7 +30,6 @@ function setup(msgAry) {
         if (number === 0) {
                 number = 1;
         }
-        
         while (number >= 1) {
             number /= 10;
             text = text.substr(1, pad.length - 1) ;
@@ -49,15 +47,12 @@ function setup(msgAry) {
         for (i = 0; i < collisionCount; i += 1) {
             text += "Collision!<br />";
         }
-        
         i = randomKey === 0 ? 1 : randomKey;
         
         text += "Key: " + pad(randomKey, '0') + randomKey + " Value: " + msgAry[randomKey] + "<br />";
- 
         $('#output').html(text);        
     };
-    
-    return print;
+        return print;
 };
 
 //document.getElementById('click-me').addEventListener('click', setup(), false);
