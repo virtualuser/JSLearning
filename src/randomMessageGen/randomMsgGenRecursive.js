@@ -7,22 +7,23 @@ function setup(msgAry) {
     var randomKey = -1
     , collisionCount
     , text = ''
-    , aryLen = msgAry.length;
+    , aryLen = msgAry.length
+    , currentRandomKey;
     
-    function updateRandomKey() {
-
-        var currentRandomKey = randomKey;
+    function updateRandomKey(first) {
         
-        collisionCount = 0;
-
-        while(true) {
-            if ((randomKey = Math.floor(Math.random() * aryLen))
-                !== currentRandomKey) {
-                break;
-            }
-            collisionCount += 1;
-        };
-    }
+        var currentRandomKey;
+        
+        if (first) {
+            currentRandomKey = randomKey;
+            collisionCount = 0;
+        }
+        if ((randomKey = Math.floor(Math.random() * aryLen))
+                === currentRandomKey) {
+                collisionCount += 1;
+                updateRandomKey(false);                
+        }
+    };
     
     function pad(number, chr) {
         var text = aryLen.toString().replace(/./g, chr);
@@ -31,7 +32,7 @@ function setup(msgAry) {
         }
         while (number >= 1) {
             number /= 10;
-            text = text.substr(1, pad.length - 1) ;
+            text = text.substr(1, text.length - 1) ;
         }
         return text;
     }
@@ -39,20 +40,19 @@ function setup(msgAry) {
     function print() {
         'use strict';
         
-        var i
-        , length;
-        
-        updateRandomKey();
+        var i;
 
-        for (i = 0; i < collisionCount; i++) {
+        updateRandomKey(true);
+
+        for (i = 0; i < collisionCount; i += 1) {
             text += "Collision!<br />";
         }
         i = randomKey === 0 ? 1 : randomKey;
-
+        
         text += "Key: " + pad(randomKey, '0') + randomKey + " Value: " + msgAry[randomKey] + "<br />";
         $('#output').html(text);        
     };
-    return print;
+        return print;
 };
 
 //document.getElementById('click-me').addEventListener('click', setup(), false);
