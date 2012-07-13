@@ -34,12 +34,9 @@ window.addEventListener('load', function () {
 
         handleFiles: function(files) {
             var file,
-                img,
                 reader,
                 imageType = /image.*/,  
                 i;
-
-            console.log(Array.isArray(this.imgs));
 
             this.imgs.forEach(function (img) {
                 message.removeChild(img);
@@ -49,8 +46,10 @@ window.addEventListener('load', function () {
             this.numLoadedImgs = 0;
             this.numImgs = files.length;
 
-            for (i = 0; i < files.length; i += 1) {
-                file = files[i];                
+            files.forEach(function(file){ 
+                
+                var img;
+
                 if (!file.type.match(imageType)) {  
                     this.numImgs -= 1;
                     return;  
@@ -64,9 +63,11 @@ window.addEventListener('load', function () {
 
                 reader = new FileReader();
                 reader.addEventListener('load', this.readerLoad(img));  
-                reader.readAsDataURL(file);        
-            }
-            if (this.numImgs === 0) {
+                reader.readAsDataURL(file);  
+
+            }.bind(this));
+
+        if (this.numImgs === 0) {
                 message.innerHTML = '(No Images Selected)';
             }
         }
