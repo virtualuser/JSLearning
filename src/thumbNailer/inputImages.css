@@ -1,0 +1,23 @@
+/* Copyright 2012 © Scott Sanbar.  See COPYRIGHT file for details
+   Original Author:  Scott Sanbar - scott.sanbar@gmail.com */
+
+.div {
+    position: absolute;
+    left: 15px;
+    top: 60px;
+}
+.file {
+    opacity: 0;
+}
+.button {
+    position:absolute;
+    left:10px;
+    top: 5px;    
+}
+.thumb {
+    height: 70px;
+    margin: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: #884499;
+}​
