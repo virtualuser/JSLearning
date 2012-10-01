@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
                     message.removeChild(img);
                 });
 
-                files = [].slice.call(files);
+                    files = [].slice.call(files);
 
                 this.imgs = [];
                 this.numLoadedImgs = 0;
