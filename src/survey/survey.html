@@ -4,9 +4,11 @@
     <title></title>
 </head>
 <body>
-<form onsubmit="return getResults();">
+<form id="formSurvey">
     <label for="name">Name:</label>
     <input id="name" type="text">
+    <label for="email">EMail:</label>
+    <input id="email" type="text">
     <fieldset>
         <legend>How well does this survey work?</legend>
         <input type="radio" name="survey" id="radio1"> <label name="radioLabels" for="radio1">Good</label>
@@ -17,21 +19,6 @@
     <input type="submit" value="submit">
 </form>
 
-<script>
-    function getResults() {
-        "use strict";
-
-        var i,
-                radios = document.getElementsByName("survey");
-
-        for (i = 0; i < radios.length; i++) {
-            if (radios[i].checked) {
-                alert("Name: " + document.getElementById('name').value + " Question 1: " + document.getElementsByName('radioLabels')[i].innerHTML);
-                break;
-            }
-        }
-        return false;
-    }
-</script>
+<script type="text/javascript" src="survey.js"></script>
 </body>
 </html>
