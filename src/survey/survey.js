@@ -1,20 +1,22 @@
-/**
- * Created with JetBrains PhpStorm.
- * User: Scott
- * Date: 7/1/13
- * Time: 7:35 PM
- * To change this template use File | Settings | File Templates.
- */
+// Copyright © 2013 Scott Sanbar.  MIT License (see http://opensource.org/licenses/MIT)
+// Original Author:  Scott Sanbar - scott.sanbar@gmail.com
+
 function getResults() {
     "use strict";
 
     var i,
-        radios = document.getElementsByName("survey");
+        j,
+        radios = [document.getElementsByName("sq1Radios"), document.getElementsByName("sq2Radios")];
 
     for (i = 0; i < radios.length; i++) {
-        if (radios[i].checked) {
-            alert("Name: " + document.getElementById('name').value + " Question 1: " + document.getElementsByName('radioLabels')[i].innerHTML);
-            break;
+        for (j = 0; j < radios[i].length; j++)
+        {
+            if (radios[i][j].checked) {
+                alert("Name: " + document.getElementById('name').value + "\n" +
+                    "Email: " + document.getElementById('email').value + '\n' +
+                    " Question 1: " + document.getElementById('sq' + i + 'RadioLabel' + j).innerHTML);
+                break;
+            }
         }
     }
     return false;
