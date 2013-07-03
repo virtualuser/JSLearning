@@ -7,27 +7,28 @@
     <title></title>
 </head>
 <body>
-<form id="formSurvey">
-    <label for="name">Name:</label>
-    <input id="name" type="text">
-    <label for="email">EMail:</label>
-    <input id="email" type="text">
+<form id='formSurvey'>
+    <label for='name'>Name:</label>
+    <input id='name' type='text'>
+    <label for='email'>EMail:</label>
+    <input id='email' type='text'>
     <fieldset>
         <legend>1.  What is your favorite pet?</legend>
-        <input type="radio" name="sq1Radio" id="sq1Radio1"> <label for="sq1Radio1">Bird</label>
-        <input type="radio" name="sq1Radio" id="sq1Radio2"> <label for="sq1Radio2">Dog</label>
-        <input type="radio" name="sq1Radio" id="sq1Radio3"> <label for="sq1Radio3">Cat</label>
-        <input type="radio" name="sq1Radio" id="sq1Radio4"> <label for="sq1Radio4">Fish</label>
+        <input type='radio' name='sq1Radio' id='sq1Radio1'> <label id='sq1RadioLabel1' for='sq1Radio1'>Bird</label>
+        <input type='radio' name='sq1Radio' id='sq1Radio2'> <label id='sq1RadioLabel2' for='sq1Radio2'>Dog</label>
+        <input type='radio' name='sq1Radio' id='sq1Radio3'> <label id='sq1RadioLabel3' for='sq1Radio3'>Cat</label>
+        <input type='radio' name='sq1Radio' id='sq1Radio4'> <label id='sq1RadioLabel4' for='sq1Radio4'>Fish</label>
     </fieldset>
     <fieldset>
         <legend>2. How well does this survey work?</legend>
-        <input type="radio" name="sq2Radio" id="sq2Radio1"> <label for="sq2Radio1">Good</label>
-        <input type="radio" name="sq2Radio" id="sq2Radio2"> <label for="sq2Radio2">OK</label>
-        <input type="radio" name="sq2Radio" id="sq2Radio3"> <label for="sq2Radio3">Bad</label>
-        <input type="radio" name="sq2Radio" id="sq2Radio4"> <label for="sq2Radio4">N/A</label>
+        <input type='radio' name='sq2Radio' id='sq2Radio1'> <label id='sq2RadioLabel1' for='sq2Radio1'>Good</label>
+        <input type='radio' name='sq2Radio' id='sq2Radio2'> <label id='sq2RadioLabel2' for='sq2Radio2'>OK</label>
+        <input type='radio' name='sq2Radio' id='sq2Radio3'> <label id='sq2RadioLabel3' for='sq2Radio3'>Bad</label>
+        <input type='radio' name='sq2Radio' id='sq2Radio4'> <label id='sq2RadioLabel4' for='sq2Radio4'>N/A</label>
     </fieldset>
-    <input type="submit" value="Submit">
+    <input type='submit' value='Submit'>
 </form>
-<script type="text/javascript" src="survey.js"></script>
+<script type='text/javascript' src='../../Libraries/CoreLibrary/src/shim.js'></script>
+<script type='text/javascript' src='survey.js'></script>
 </body>
 </html>
