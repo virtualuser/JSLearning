@@ -11,8 +11,7 @@ function getResults() {
         radios = [document.getElementsByName('sq1Radio'), document.getElementsByName('sq2Radio')];
 
     for (i = 0; i < radios.length; i++) {
-        for (j = 0; j < radios[i].length; j++)
-        {
+        for (j = 0; j < radios[i].length; j++) {
             if (radios[i][j].checked) {
                 output += 'Question ' + (i + 1) + ': ' +
                     document.getElementById('sq' + (i + 1) + 'RadioLabel' + (j + 1)).innerHTML + '\n';
@@ -24,8 +23,6 @@ function getResults() {
     if (output !== '') {
         alert(output);
     }
-
-    return false;
 }
 
 shim.addEventListener(window, 'load',
