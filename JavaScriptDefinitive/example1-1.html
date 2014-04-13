@@ -1,0 +1,67 @@
+<!-- Copyright © 2013 Scott Sanbar.  MIT License (see http://opensource.org/licenses/MIT)
+     Original Author:  Scott Sanbar - scott.sanbar@gmail.com -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorials</title>
+</head>
+<body>
+    <h2>Table of Factorials</h2>
+    <script>
+        function simCallByRef (paramRefToObj, paramRefToRefToObj) {
+
+            paramRefToRefToObj.refToObj.obj.int = 3; // char value changed to 'f' outside function
+
+            paramRefToRefToObj.refToObj = paramRefToObj; // simulates call by reference
+            // now, what *paramRefToRefToChar
+            // points to is same as paramRefToChar
+
+            paramRefToRefToObj.refToObj.obj.int = 4; // changes value of what paramRefToChar points to
+
+            paramRefToObj = {}; // Has no effect outside function - just a copy (call-by-value)
+
+            paramRefToRefToObj = {}; // Has no effect outside function - just a copy (call-by-value);
+        }
+
+        var a = {int: 1},
+            b = {int: 2},
+            refToA = {obj: a},
+            refToB = {obj: b},
+            refToRefToB = {refToObj: refToB};
+
+        simCallByRef(refToA, refToRefToB);
+
+        console.log(a.int, b.int, refToA.obj.int, refToRefToB.refToObj.obj.int);
+        /*
+        var z = {a: 'a'},
+            a = z,
+            func = function (obj) {
+                obj.a = 'inFunc';
+                obj = {};
+            }
+        func(z);
+        //z.a = 'b';
+        console.log((a === z) + " " + a.a); // output: true inFunc
+        var x = "String1";
+        var y = x;
+        //document.write(y === x);
+        x = x + " is now bigger!";
+        //document.write('x: ' + x + ' y: ' + y);
+        document.write('Min:' + Number.MIN_VALUE + ' Max: ' + Number.MAX_VALUE + '<br>')
+        var fact = 1;
+        for (i = 1; i < 9; i++) {
+            fact = fact * i;
+            document.write(i + '! = ' + fact + '<br>')
+        }
+        for (i = 0, j = 1, k = 0, fib = 0; i < 50; i++, fib = j + k, j = k, k = fib) {
+            document.write('fibonacci (' + i + ') = ' + fib + '<br>');
+        }
+        //document.write(u);
+        (function (x) {
+            document.write(x);
+        })();
+        */
+    </script>
+</body>
+</html>
